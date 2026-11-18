@@ -98,7 +98,7 @@ plt.figure(figsize=(8, 5))
 plt.plot(x_nodes, y_nodes, 'ko', markersize=8, label='Узлы')
 plt.plot(x_plot, y_lagrange, 'r-', linewidth=2, label='Интерполяция Лагранжа')
 plt.plot(x_plot, y_approx, 'b--', linewidth=2, label=f'Аппроксимация (степень {degree})')
-plt.title('Интерполяция и аппроксимация (Вариант 2)')
+plt.title('Интерполяция и аппроксимация')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.legend()
@@ -128,7 +128,7 @@ for n in n_values:
     y_interp_r = [lagrange(x, x_nodes_r, y_nodes_r) for x in x_true]
     plt.plot(x_true, y_interp_r, '--', label=f'Интерполяция n={n}')
 
-plt.title('Феномен Рунге: интерполяция функции варианта 2')
+plt.title('Феномен Рунге: интерполяция функции')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.ylim(-1.0, 3.0)
